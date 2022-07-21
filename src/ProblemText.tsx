@@ -1,6 +1,7 @@
 import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import {checkLast, cls} from '../util';
+import './font.css';
 
 type ProblemTextProps = {
 	inputRange: number[];
@@ -26,7 +27,7 @@ export const ProblemText: React.FC<ProblemTextProps> = ({
 			{texts.map((text, index) => (
 				<span
 					className={cls(
-						'text-5xl w-8 text-center',
+						'text-5xl w-8 text-center font-notoSans',
 						isLast && checkLast(index, texts.length)
 							? 'text-rose-500'
 							: ' text-gray-500'

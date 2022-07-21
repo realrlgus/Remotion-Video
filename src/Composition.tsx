@@ -1,7 +1,6 @@
 import {Audio} from 'remotion';
 import {AbsoluteFill} from 'remotion';
 import {checkLast} from '../util';
-import {Logo} from './Logo';
 import {ProblemText} from './ProblemText';
 import {Title} from './Title';
 import BGM from './audio/bgm.mp3';
@@ -42,7 +41,7 @@ const problems = [
 export const MyComposition = () => {
 	return (
 		<>
-			<AbsoluteFill className="bg-gray-100 items-center flex pt-32 gap-10">
+			<AbsoluteFill className="bg-gray-100 items-center pt-32 flex gap-10">
 				<Title />
 				{problems.map((problem, index) => (
 					<ProblemText
