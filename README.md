@@ -4,8 +4,6 @@
 
 ### Remotion이란?
 
----
-
 Remotion은 React문법으로 동영상을 제작 할 수 있는 라이브러리입니다.
 
 [공식문서](https://remotion.dev/docs)
